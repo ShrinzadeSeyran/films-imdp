@@ -1,7 +1,7 @@
 // https://imdb-api.com/API/Search/k_ccxkk6gd/{filmin adi}
 document.getElementById('btn').addEventListener('click',() => {
     document.getElementById('films').innerHTML=``
-fetch(`https://imdb-api.com/en/API/Search/k_m52l4e8n/${document.getElementById('film-input').value}`)
+    fetch(`https://imdb-api.com/en/API/Search/k_m52l4e8n/${document.getElementById('film-input').value}`)
     .then((resp) => resp.json())
     .then((data) => {
         // console.log(data.results);
